@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #e0f7fa;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #ff8c42;
+  color: white;
+  margin: 5px;
+}
+
+button:hover {
+  background: #ff6f00;
+}
+
+/* Progress Bar Animation */
+.progress-container {
+  width: 100%;
+  background: #cfd8dc;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 30px;
+  width: 0%;
+  background: #4caf50;
+  border-radius: 10px;
+  transition: width 2s ease-in-out;
+}
+
+/* Runner Animation */
+  .runner {
+  width: 50px;
+  height: 50px;
+  background: #ff6f00;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.run {
+  animation: runAcross 3s linear forwards;
+}
+
+@keyframes runAcross {
+  0% { left: 0; }
+  100% { left: 400px; }
+}
